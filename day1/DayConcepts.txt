@@ -1,0 +1,66 @@
+# Install
+
+1. VSCode
+2. Node.js
+
+# Introuction to ES6 / ECMA Script
+
+ECMAScript stands for European Computer Manufacturer Association Script
+It lays out the specification and basic rules of language on which javascript is based on
+
+ES6 / ECMAScript 2015 was the second major release for javascript
+
+- let
+- const
+- default parameters
+- spread opeartor
+- destructuring
+- for..of loops
+- template literal
+- modules
+- map
+- arrow function
+- class
+- inheritence
+
+
+# Let
+the let keyword is similar to the var keywork except that these variable are blocked-scope
+
+
+# const
+ a new keyword if declaring a constant by using the const keyword
+ the const keyword create a read-only reference variable
+ variable declared by the const keyword can't be reassigned
+
+# default parameters
+
+# Rest parameters
+ES6 provides a new kind of parameters called rest parameters hat has a prefix of three dots
+a rest parameters allows you represent an indefinite number of arguments as an array
+the last parameters is prefix with ... 
+
+# spread opeartor
+Es6 provides a new opeartor called spread opeartor that consist of three dots
+the spread opeartor allows you spread out element of an iterable object such array, map, set
+
+
+
+# destructuring 
+ES6 provide a new features called destructuring assignment that allow you to destructure
+properties of an objevt or element of an array into indivdual variables
+
+# for..of
+
+# template literal
+
+# Arrow function
+Es6 arraow function is use an alternative short syntex to write functions as an expression
+
+# map function
+the map() function create a new result by calling a function fot every array element
+
+
+https://acodez.in/es6-features/#5_Multi-line_Strings
+https://www.tutorialrepublic.com/javascript-tutorial/javascript-es6-features.php
+https://www.javatpoint.com/reactjs-tutorial
