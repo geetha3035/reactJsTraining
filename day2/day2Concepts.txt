@@ -1,0 +1,105 @@
+# Component
+- A component represent a part of user interface
+- whatever is visible on the web browser is a component, we can combine components
+together to make a bigger component which can be called as a web page
+- components are reusable and make the application more modular
+  for example: header, footer, sidebar, all these components are individual and 
+  independent which we can kept inside the root component
+
+# type of component
+- class components
+- functional components
+
+# function vs class component
+function component
+- are also know  as stateless component but before v16
+- they work like a javascript function which accept props as an arguments
+- they do not have their own state but with the help of hook they can
+- they return valid JSX / react element
+
+class component
+- are also know as statefull components
+- are more complex component and conceptully behaves as class introduces in ES6
+- manage their own state
+
+
+# JSX
+JSX = Javascript + XML
+extension to the javascript language syntex
+write xml like code for element and components
+JSX is not necessary to write in react app this is for our convienence
+JSX can be considerd as syntactical expression of javascript syntex, used to 
+create react elements
+
+
+# Why JSX
+- faster then javascript in compilation and execution
+- ensures optimization during transpilation of the code to JS
+- ensures better optimization as it allows React to highlight usefull error and 
+  mesage of warning at compile time
+- using JSX developers find easier to work with components of react having UI 
+  inside the JS code
+
+# Props and State
+
+Props - properties - send data between the component
+State - data - to maintain data with in the component
+
+
+# Props vs State
+1. Props get passed to the components where as state is managed with in the component
+2. props are immutable where as state can be changed
+3. in function components we pass props as a function argument where we as we declare 
+variable with in a function body as state
+
+earlier function component cannot have state but after 16 version with the help of
+hook not functional components can have state
+
+class component = state
+function component = useState()
+
+# Events
+An event is an action that could be triggered by user intercation or can be the result
+of system generated events
+
+In React like javascript it has its specific methods to handle events, which are 
+conceptually similar to handling the events on DOM elements
+
+for example
+click
+mouseover
+change
+keyup
+blur 
+etc
+
+Synthetic event wraper that forms part of the react event system
+
+there are some syntactic diffrence in handling events with each from 
+handling event on DOM
+
+1. React events are name as camelCase instead of lowercase
+2. with JSX a function is passed as the event handler instead of a string
+3. we cannot return a false in React to prevent a default behaviour
+instead imperative to explicitu call preventDefault to prevent thr same
+
+onchange - onChange
+onclick - onClick
+
+
+
+
+# In React the this keyword should represent the component that owns the method
+
+if we are using a regular function syntax then we have to use bind() method to
+bind the context otherwise we can use arrow function
+
+
+
+
+
+
+
+
+
+ 
