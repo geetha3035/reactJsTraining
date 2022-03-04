@@ -1,0 +1,51 @@
+# Conditional Rendering
+# List
+# Http Calls
+
+# Conditional Rendering
+If you want to display or hide the content dynamically or conditoinally 
+
+- if / else
+- element value
+- ternery opeartor
+- circuit breaker
+
+
+condition ? true statement : false statement
+
+
+# List
+
+key - we have to provide a unique key to event element of the row when generating 
+a list
+
+- table
+- menu item
+- unordered / ordered list
+
+# Http
+
+- axios
+- fetch
+- request
+
+> npm i axios --save    // main dependency
+> npm i <package_name> --save-dev   // development dependency
+
+
+Http Verbs
+- Get - read data
+- Post - create 
+- Delete - delete
+- Put - update
+
+
+
+
+
+
+
+
+
+
+
