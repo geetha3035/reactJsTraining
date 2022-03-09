@@ -1,0 +1,41 @@
+#React Form
+
+- Forms are essential part of any application as it allows user to interact with your application
+- forms can be use take information from the user
+- forms can contain different type of elements to take different type of data
+- forms can contain textbook, dropdown, radiobuton etc
+
+# creating form
+- react provides a stageful and fairly reactive approach to. Create, design and build a form
+- instead of a DOM element, its the component that handle the react forms
+- there are primary two kind of input in react
+1. Uncontrolled component
+2. Controlled component
+
+
+# controlled component
+- the input form element is handled by the component itself with mutable state being kept in the state property and is only updated using setState() method
+- function mediate the data passing into them on every onChange event instead of having the data only once
+- this passed data is save to the state and update using setState() method enabling the component to gain better control over form element
+
+- form element like <input> and <button> in html generally maintain their own state#React Form
+
+- Forms are essential part of any application as it allows user to interact with your application
+- forms can be use take information from the user
+- forms can contain different type of elements to take different type of data
+- forms can contain textbook, dropdown, radiobuton etc
+
+# creating form
+- react provides a stageful and fairly reactive approach to. Create, design and build a form
+- instead of a DOM element, its the component that handle the react forms
+- there are primary two kind of input in react
+1. Uncontrolled component
+2. Controlled component
+
+
+# controlled component
+- the input form element is handled by the component itself with mutable state being kept in the state property and is only updated using setState() method
+- function mediate the data passing into them on every onChange event instead of having the data only once
+- this passed data is save to the state and update using setState() method enabling the component to gain better control over form element
+
+- form element like <input> and <button> in html generally maintain their own state

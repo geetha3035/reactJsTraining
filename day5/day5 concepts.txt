@@ -1,0 +1,110 @@
+# Life Cycle of Components
+- component in JS and consequently in React follow a life cycle executing multiple tasks and going 
+through different phases of state
+- followinf lifecycle, these components and elements get triggered upon different events transforming
+themselves and their state accordingly
+- using lifecycle method or hooks a developer can specify how the components is going to behave
+freeing up it resources
+
+1. mounting
+2. updating
+3. unmounting
+
+# mounting
+this phase means putting elements into the DOM
+REact has four built-in method that get called in the same order when component is mounted
+
+constructor()
+getDerivedStateFromProps()
+render()
+componentDidMount()
+
+
+the render() mthod is only required and other are optional and will be called if you define them
+
+
+
+constructor()
+- it is a special function that will get called whenever a new component is created, it is mostly
+used to initialize state and binding the event handlers
+- the consutructor() method is called with the props as an argument and you should always start by 
+calling super()
+- we should not make HTTP request in constructor
+
+
+# getDerivedStateFromProps()
+- this method is called right before rendering the element in the DOM
+- this is the prefered place to set the state object based on the initial props
+- it takes state as an argument and retunr an object with chnages to the state
+
+
+# render()
+- method is the only method required
+- this is the method responsable for output the HTML to the DOM
+- do not change the state or intercat with DOM or make ajax call
+
+
+# componentDidMount()
+- this method is called immediately after the component is rendered
+- this is the method we mostly use when we want to run statement which required the component is 
+ready and placed in the DOM
+- we can intercat with DOM and can also make HTTP request to get data
+
+
+# Updating
+the next phase in the lifecycle is when a component is updated
+A component is updated whenever there is a change in the component state or props
+in react there are 5 built-in method that get called in order when a component is updated
+
+1. getDerivedStateFromProps()
+2. shouldComponentUpdate()
+3. render()
+4. getSnapshopBeforeUpdate()
+5. componentDidUpdate()
+
+
+# getDerivedStateFromProps()
+- this method is called when a compknent get updated
+- this is still the preferred place to set the state object based on initila props
+
+
+# shouldComponentUpdate()
+this method can return a boolean value that instruct react that it should continue with rendering
+or not the deafult value is true
+
+
+# render()
+this method is called everytime when a component get updated
+to update the UI it will re-render thr HTML to the DOM with new changes
+
+
+# getSnapshotBeforeUpdate()
+this method can access the previous value of props and state after the update
+if getSnapshotBeforeUpdate() method is present you should also include componentDudUpdate()
+method otherwise you will get an error
+
+
+# componentDidUpdate()
+this method is called  after the component is updated in the DOM
+
+
+
+# UnMounting
+
+The next phase in the lifecycle is when a component is removed from the DOM
+In react there is only one built-in method that get called when a component is unmounted
+
+ -- componentWillUnMount()
+
+This method css called when the component is about to be removed from the DOM
+
+
+
+
+
+
+
+
+
+
+
