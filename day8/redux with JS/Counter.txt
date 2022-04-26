@@ -1,0 +1,3 @@
+open broswer and paste the path of index.html in browser
+path = file:///D:/ReactJs/day8/redux%20with%20JS/index.html
+ and see the output in the browser.

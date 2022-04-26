@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/5.0.0-alpha.0/redux.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Counter: <span id="value">0</span></h1>
+      <button id="increment">Increment</button>
+      <button id="decrement">Decrement</button>
+    </div>
+
+    <script>
+      // reducer function with initial state
+      function counterReducer(state, action) {
+        if (typeof state === "undefined") {
+          return 0;
+        }
+
+        switch (action.type) {
+          case "INCREMENT":
+            return state + 1;
+          case "DECREMENT":
+            return state - 1;
+        }
+      }
+
+      // create a store
+      var store = Redux.createStore(counterReducer);
+
+      function render() {
+        var elementRef = document.getElementById("value");
+        elementRef.innerHTML = store.getState().toString();
+      }
+      render();
+
+      document
+        .getElementById("increment")
+        .addEventListener("click", function () {
+          store.dispatch({ type: "INCREMENT" });
+        });
+
+      document
+        .getElementById("decrement")
+        .addEventListener("click", function () {
+          store.dispatch({ type: "DECREMENT" });
+        });
+
+      store.subscribe(render);
+    </script>
+  </body>
+</html>
